@@ -7,7 +7,7 @@ const bodyparser=require('body-parser')
 
 const connectDB=require('./database/connection')
 
- const router =require('./Routes/auth.routes')
+const mainRouter = require('./Routes/MainRouter');
 
 connectDB()
 app.use(express.json())
@@ -22,7 +22,8 @@ const corsOptions = {
 app.use(cors(corsOptions))
 
 
-app.use('/api/auth',router)
+
+app.use('/api', mainRouter);
 
 
 app.listen(PORT,()=>{

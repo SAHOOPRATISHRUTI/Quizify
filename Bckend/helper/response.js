@@ -1,6 +1,6 @@
 const failResponse = (res, message, statusCode = 400) => {
     return res.status(statusCode).send({
-        error: false,
+        error: true, // Indicates that this is a failure
         success: false,
         message: message,
         data: null

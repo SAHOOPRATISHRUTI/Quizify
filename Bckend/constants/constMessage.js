@@ -23,7 +23,14 @@ const  quizUpdated= "Quiz updated successfully."
 const  quizDeleted= "Quiz deleted successfully."
 const  quizzesFetched= "Quizzes fetched successfully."
 const   quizNotFound= "Quiz not found."
+
+const quizSubmitted= 'Quiz submitted successfully.'
+const resultFetched= 'Result fetched successfully.'
+const resultNotFound= 'Result not found.'
 module.exports={
+    quizSubmitted,
+    resultFetched,
+    resultNotFound,
     duplicateEmail,
     createdSucess,
     invalidToken,
